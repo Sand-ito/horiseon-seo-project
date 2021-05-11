@@ -1,13 +1,16 @@
+/* selects all tags with rules for padding and margins with their box sizing. */
 * {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
 }
 
+/* Tells entire body to have background color. */
 body {
     background-color: #d9dcd6;
 }
 
+/* Gives CSS rules to everything in header such as; padding, font type, and color of text and the background.*/
 header {
     padding: 20px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -15,17 +18,20 @@ header {
     color: #ffffff;
 }
 
+/* Makes h1 large font size and interact with elements inline block form. */
 header h1 {
     display: inline-block;
     font-size: 48px;
 }
 
+/* Gives .seo class a unique text color and removes any borders. */
 header h1 .seo {
     color: #d9dcd6;
     border: none;
     text-decoration: none;
 }
 
+/* Formating navigation bar with certain font and font size. */
 header nav {
     padding-top: 15px;
     margin-right: 20px;
@@ -34,25 +40,31 @@ header nav {
     font-size: 20px;
 }
 
+/* Unordered list is made to be in default style. */
 header nav ul {
     list-style-type: none;
 }
 
+/* Positions list to be on right side of display. */
 header nav ul li {
     display: inline-block;
     margin-left: 25px;
 }
 
+/* Makes links a certain font color, until they are interacted with. */
 a {
     color: #ffffff;
     text-decoration: none;
 }
 
+/* When the nav links are interacted with by placing your curser over them they will change text color and background color. */
 a:hover{
     background-color: #ffffff;
     color: #2a607c;
 }
 
+/* This is where we linked the image to be made as the background image.
+We also hid some copyright text. */
 .hero {
     height: 800px;
     width: 100%;
@@ -63,30 +75,58 @@ a:hover{
     overflow: hidden;
 }
 
+/* We used the margin to push the text off the screen, and used the previous css with "overflow: hidden;". */
 .hero h2{
     margin-left: -9999px;
 }
 
+/* Makes article leave room for the aside, and puts it on the left side of the display.
+Also tells boxes to display inline.*/
 article {
     width: 75%;
     display: inline-block;
     margin-left: 20px;
 }
 
+/* Rules to the boxes that make up the seperate sections of the articles */
+article section {
+    margin-bottom: 20px;
+    padding: 50px;
+    height: 300px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #0072bb;
+    color: #ffffff;
+}
+
+/* Makes Images in the article a certain size */
+section img {
+    max-height: 200px;
+}
+
+/* Headers in the Articles have a large font size, and spaced from <p> text */
+section h2 {
+    margin-bottom: 20px;
+    font-size: 36px;
+}
+
+/* Paragraphs within the article tag have a font size of 16px. */
 p {
     font-size: 16px;
 }
 
+/* Class that helps elements posistion to left side of display. */
 .float-left {
     float: left;
     margin-right: 25px;
 }
 
+/* Class that helps elements posistion to right side of display. */
 .float-right {
     float: right;
     margin-left: 25px;
 }
 
+/* The aside article will occupy the right of the display.*/
 aside {
     margin-right: 20px;
     padding: 20px;
@@ -98,40 +138,26 @@ aside {
     background-color: #2589bd;
 }
 
+/* Gives spacing withing aside to have same length as the article.*/
 aside section {
     margin-bottom: 32px;
     color: #ffffff;
 }
 
+/* A little more spacing, but also centers text within aside. */
 aside section h3 {
     margin-bottom: 10px;
     text-align: center;
 }
 
+/* Rules to the images within the aside. Spacing, display, and size rules. */
 aside section img {
     display: block;
     margin: 10px auto;
     max-width: 150px;
 }
 
-article section {
-    margin-bottom: 20px;
-    padding: 50px;
-    height: 300px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #0072bb;
-    color: #ffffff;
-}
-
-section img {
-    max-height: 200px;
-}
-
-section h2 {
-    margin-bottom: 20px;
-    font-size: 36px;
-}
-
+/* Centered foot with space and certain font. */
 footer {
     padding: 30px;
     clear: both;
@@ -139,6 +165,7 @@ footer {
     text-align: center;
 }
 
+/* Size of header in footer is 20px. */
 footer h4 {
     font-size: 20px;
 }
